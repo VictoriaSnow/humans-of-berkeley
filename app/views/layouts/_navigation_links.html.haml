@@ -1,0 +1,79 @@
+- if user_signed_in?
+    / .user
+    %li= link_to 'Featured', root_path
+    %li= link_to 'Top stories', new_post_path
+    %li= link_to 'New post', new_post_path
+    %li= link_to 'My profile', new_post_path
+    %li= link_to 'Edit account', edit_user_registration_path
+    %li= link_to 'Sign out', destroy_user_session_path, :method=>'delete'
+    
+
+    / %li
+    /     %a{:href => root_path}
+    /         %span.mega-octicon.octicon-home
+    / %li
+    /     %a{:href => users_path}
+    /         %span.mega-octicon.octicon-flame
+    / %li
+    /     %a{:href => users_path}
+    /         %span.mega-octicon.octicon-search
+    / %li
+    /     %a{:href => users_path}
+    /         %span.mega-octicon.octicon-globe
+    / %li
+    /     %a{:href => users_path}
+    /         %span.mega-octicon.octicon-inbox
+    / %li
+    /     %a{:href => new_post_path}
+    /         %span.mega-octicon.octicon-pencil
+    / %li
+    /     %a{:href => edit_user_registration_path}
+    /         %span.mega-octicon.octicon-gear
+    / %li
+    /     %a{:href => destroy_user_session_path, :method=>'delete'}
+    /         %span.mega-octicon.octicon-x   
+
+    / %li
+    /     = link_to destroy_user_session_path, :method=>'delete', class: "mega-octicon" do
+    /         %span.mega-octicon.octicon-sign-out
+
+    / = link_to root_path, class: "mega-octicon" do
+    /     %span.mega-octicon.octicon-home
+    / = link_to users_path, class: "mega-octicon" do
+    /     %span.mega-octicon.octicon-flame
+    / = link_to users_path, class: "mega-octicon" do
+    /     %span.mega-octicon.octicon-search
+    / = link_to users_path, class: "mega-octicon" do
+    /     %span.mega-octicon.octicon-globe
+    / = link_to users_path, class: "mega-octicon" do
+    /     %span.mega-octicon.octicon-inbox
+    / = link_to new_post_path, class: "mega-octicon" do
+    /     %span.mega-octicon.octicon-pencil
+    / = link_to edit_user_registration_path, class: "mega-octicon" do
+    /     %span.mega-octicon.octicon-gear
+    / = link_to destroy_user_session_path, :method=>'delete', class: "mega-octicon" do
+    /     %span.mega-octicon.octicon-x
+    / %li.dropdown
+    /     %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+    /         %span.mega-octicon.octicon-three-bars
+    /         %span.caret
+    /     %ul.dropdown-menu{:role => "menu"}
+    /         %li
+    /             %a{:href => "#"} Login
+    /         %li.divider
+    /         = link_to new_post_path, class: "mega-octicon" do
+    /             %span.mega-octicon.octicon-pencil
+
+    / %li= link_to destroy_user_session_path, method: :delete, class: "octicon" do
+    / %span.octicon.octicon-flame
+    / .collapse.navbar-collapse
+    /     %ul.nav.navbar-nav.navbar-right 
+    /     %span.mega-octicon.octicon-three-bars
+									
+- else
+
+
+    %li= link_to 'Sign in', new_user_session_path
+    %li= link_to 'Sign up', new_user_registration_path
+
+

@@ -14,6 +14,11 @@ gem 'devise'
 gem 'haml-rails'
 gem 'simple_form'
 gem 'thin'
+
+gem 'paperclip', '~> 4.2.0'
+gem 'masonry-rails', '~> 0.2.4'
+gem 'acts_as_votable', '~> 0.10.0'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
