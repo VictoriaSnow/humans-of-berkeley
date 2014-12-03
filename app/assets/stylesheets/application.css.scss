@@ -292,14 +292,14 @@ text-decoration: none;
   // apply styles to HTML elements
   // to make views framework-neutral
 
-/*  main {
-    @extend .container;*/
+  main {
+    @extend .container;
 /*    background-color: #E4E4E4;*/
-/*    padding-bottom: 80px;
+    padding-bottom: 80px;
     width: 100%;
-    padding-top: 40px;*/
-/*  }*/
-/*  section {
+    padding-top: 40px;
+  }
+  section {
     @extend .row;
     margin-top: 20px;
-  }*/
+  }
