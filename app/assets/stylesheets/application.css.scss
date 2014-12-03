@@ -19,78 +19,53 @@
   = require sprockets-octicons
   */
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+  @import "bootstrap-sprockets";
+  @import "bootstrap";
+  @import url(http://fonts.googleapis.com/css?family=Roboto);
+  @import url(http://fonts.googleapis.com/css?family=Rouge+Script);
 
-html, body{
+  html, body{
     width: 100%;
     height: 100%;
     overflow: scroll;
-}
- body {
-font-family: verdana, helvetica neue, century-gothic, sans-serif;
-/*  background: #E4E4E4;*/
-  /*  background: #4E6680;*/
-background-image: image-url("blue.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
-$body-bg: transparent; 
-}
+  }
+  body {
+    font-family: verdana, helvetica neue, century-gothic, sans-serif;
 
-/*.glass::before {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url('blue.jpg');
-    -webkit-filter: blur(20px);
+    background-image: image-url("blue.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    content: ' ';
-    opacity: 0.4;
-}
-.glass {
-    background-color: white;
-}
-.glass.down {
-    transform: translateY(100%) translateY(-7rem);
-}
-.glass.down::before {
-    transform: translateY(-100%) translateY(7rem);
-}
-.glass.up, .glass.up::before {
-    transform: translateY(0);
-}*/
-/*h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
-  }*/
+    background-attachment: fixed;
+    background-position: center;
+    $body-bg: transparent; 
+  }
+
+
 
   nav {
     .mega-octicon {
-    text-align: center;
-    color:#757575;
-    padding: 5px 5px 4px 5px;
-    font-size: 27px;
-  }
-
-
-  .mega-octicon{
-
-
-  }
-
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.35);
-  .navbar-brand {
-
-    a {
-      color:#81D8D0;
-      font-weight: bold;
-      &:hover {
-        text-decoration: none;
-      }
+      text-align: center;
+      color:#757575;
+      padding: 5px 5px 4px 5px;
+      font-size: 27px;
     }
+
+
+    .mega-octicon{
+
+
+    }
+
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.35);
+    .navbar-brand {
+
+      a {
+        color:#81D8D0;
+        font-weight: bold;
+        &:hover {
+          text-decoration: none;
+        }
+      }
 
 
     }
@@ -106,26 +81,19 @@ $body-bg: transparent;
 
   }
   .navbar-default .navbar-brand {
-/*    color: #81D8D0;*/
-/*    font-family: Century Gothic, Roboto,Century Gothic,CopperplateGothic-Bold;*/
-font-family: 'Rouge Script', cursive;
+
+    font-family: 'Rouge Script', cursive;
     font-size: 28px;
   }
   .navbar-right {
-/*    display: inline-block;
-    margin-top: 10px;*/
-/*    padding-top: 10px;*/
+
   }
-.navbar-default .navbar-nav > li > a :hover{
-color: #8BC349;
 
-}
 
-.navbar-nav > li > a {
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-}
-
+  .navbar-nav > li > a {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+  }
   #posts {
     margin: 0px auto;
     width: 100%;
@@ -134,10 +102,10 @@ color: #8BC349;
       width: 350px;
 
       box-shadow: 0 -2px 6px transparent,0 3px 8px rgba(0, 0, 0, 0.5) ,0 10px 10px transparent,0 14px 14px transparent,0 19px 19px transparent;
-      /*    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);*/
+
       border-radius: 5px;
       border: none;
-      /*    border: 1px solid #D4D4D4;*/
+
 
       -moz-border-radius:5px;
       -webkit-border-radius:5px;
@@ -155,17 +123,16 @@ color: #8BC349;
         line-height: 1.6;
         margin: 0;
         padding: 25px 10px;
-/*        max-height: 400px;*/
+
         text-align: left;
-                font-family: verdana,helvetica neue;
-/*        font-family: 'Roboto', helvetica neue;
-        display: block;*/
+        font-family: verdana,helvetica neue;
+
 
         a {
           color: #474747;
-text-decoration: none;
+          text-decoration: none;
 
-        display: block;
+          display: block;
         }
       }
       .user {
@@ -197,7 +164,7 @@ text-decoration: none;
         width: 100%;
         display: block;
         margin: 0 auto;
-                border-radius: 4px;
+        border-radius: 4px;
         -moz-border-radius:4px 4px 0 0;
         -webkit-border-radius:4px 4px 0 0;
       }
@@ -272,10 +239,10 @@ text-decoration: none;
   // THESE ARE EXAMPLES YOU CAN MODIFY
   // create your own classes
   // to make views framework-neutral
-/*  .column {
+  .column {
     @extend .col-md-6;
     @extend .text-center;
-  }*/
+  }
   .form {
     @extend .col-md-6;
   }
@@ -294,10 +261,9 @@ text-decoration: none;
 
   main {
     @extend .container;
-/*    background-color: #E4E4E4;*/
     padding-bottom: 80px;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 80px;
   }
   section {
     @extend .row;

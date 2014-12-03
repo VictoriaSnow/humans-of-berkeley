@@ -7,6 +7,6 @@ Rails.application.routes.draw do
       put "like", to: "posts#upvote"
     end
   end
-  # root to: 'posts#index'
-  root to: 'posts#index'
+
+  root 'posts#index'
 end
