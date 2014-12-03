@@ -10,78 +10,7 @@
     = csrf_meta_tags
   %body
     %header
-
-
-
       = render 'layouts/navigation'
-
-
     %main{:role => "main"}
       = render 'layouts/messages'
       = yield
-
-
-/ !!! 5
-/ %html
-/   %head
-/     %title post Board
-/     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-/     = javascript_include_tag 'application', 'data-turbolinks-track' => true
-/     = csrf_meta_tags
-
-/   %body
-/     %nav.navbar.navbar-default
-/       .container
-/         .navbar-brand= link_to "post Board", root_path
-
-/         - if user_signed_in?
-/           %ul.nav.navbar-nav.navbar-right
-/             %li= link_to "New post", new_post_path
-/             %li= link_to "Account", edit_user_registration_path
-/             %li= link_to "Sign Out", destroy_user_session_path, method: :delete
-/         - else
-/           %ul.nav.navbar-nav.navbar-right
-/             %li= link_to "Sign Up", new_user_registration_path
-/             %li= link_to "Sign In", new_user_session_path
-/     .container
-/       - flash.each do |name, msg|
-/         = content_tag :div, msg, class: "alert alert-info"
-/       = yield
-
-/ !!! 5
-/ %html
-/ %head
-/   %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-/   %title post Board
-/   = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-/   = javascript_include_tag 'application', 'data-turbolinks-track' => true
-/   = csrf_meta_tags
-
-/ %body
-
-/   %header
-/     %nav.navbar.navbar-default.navbar-fixed-top
-/       .container
-/         .navbar-header
-/           = link_to 'Humans of Berkeley', root_path, class: 'navbar-brand'
-/           %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
-/             %span.sr-only Toggle navigation
-/             %span.icon-bar
-/             %span.icon-bar
-/             %span.icon-bar
-
-/         .collapse.navbar-collapse
-/           %ul.nav.navbar-nav.navbar-right
-/             - if user_signed_in?
-
-/               %li= link_to "New post", new_post_path
-/               %li= link_to "Account", edit_user_registration_path
-/               %li= link_to "Sign Out", destroy_user_session_path, method: :delete
-/             - else
-
-/               %li= link_to "Sign Up", new_user_registration_path
-/               %li= link_to "Sign In", new_user_session_path
-/   %main{:role => "main"}
-/     - flash.each do |name, msg|
-/       = content_tag :div, msg, class: "alert alert-info"
-/     = yield
