@@ -116,15 +116,16 @@ font-family: 'Rouge Script', cursive;
     margin-top: 10px;*/
 /*    padding-top: 10px;*/
   }
-/*.navbar-default .navbar-nav > li > a :hover{
+.navbar-default .navbar-nav > li > a :hover{
 color: #8BC349;
 
-}*/
+}
 
 .navbar-nav > li > a {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
 }
+
   #posts {
     margin: 0px auto;
     width: 100%;
@@ -271,10 +272,10 @@ text-decoration: none;
   // THESE ARE EXAMPLES YOU CAN MODIFY
   // create your own classes
   // to make views framework-neutral
-  .column {
+/*  .column {
     @extend .col-md-6;
     @extend .text-center;
-  }
+  }*/
   .form {
     @extend .col-md-6;
   }
@@ -291,14 +292,14 @@ text-decoration: none;
   // apply styles to HTML elements
   // to make views framework-neutral
 
-  main {
-    @extend .container;
+/*  main {
+    @extend .container;*/
 /*    background-color: #E4E4E4;*/
-    padding-bottom: 80px;
+/*    padding-bottom: 80px;
     width: 100%;
-    padding-top: 80px;
-  }
-  section {
+    padding-top: 40px;*/
+/*  }*/
+/*  section {
     @extend .row;
     margin-top: 20px;
-  }
+  }*/
