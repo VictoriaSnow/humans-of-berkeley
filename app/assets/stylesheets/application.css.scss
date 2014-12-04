@@ -55,7 +55,7 @@
         font-weight: bold;
         &:hover {
           text-decoration: none;
-          color: #634F80;
+          color: #6e5494;
         }
       }
 
@@ -64,18 +64,18 @@
     background: #FFFFFF;
     -moz-box-shadow:    0px 3px 4px 0px rgba(0,0,0,0.35);
     box-shadow:         0px 3px 4px 0px rgba(0,0,0,0.35);
-    color: #634F80;
+    color: #6e5494;
     line-height: 28px;
   }
   .navbar-default {
     background-color: #FFF;
     border:none;
-border-bottom: 3px solid #634F80;
+border-bottom: 3px solid #6e5494;
   }
   .navbar-default .navbar-brand {
     font-family: 'Rouge Script', cursive;
     font-size: 28px;
-    color: #634F80;
+    color: #6e5494;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
   }
 
@@ -214,8 +214,8 @@ border-bottom: 3px solid #634F80;
   }
   .btn-primary{
     color: white;
-    background-color: #634F80;
-    border-color: #634F80;
+    background-color: #6e5494;
+    border-color: #6e5494;
     &:hover { background-color: #9482AE; border-color: #9482AE}
   }
   .panel-default{
@@ -224,7 +224,7 @@ border-bottom: 3px solid #634F80;
   .panel-default .panel-heading{
     background: rgba(230, 230, 230, 0.5);
     text-align: center;
-    color: #634F80;
+    color: #6e5494;
   }
 
   #user_show{
@@ -297,8 +297,8 @@ border-bottom: 3px solid #634F80;
     @extend .btn;
     @extend .btn-primary;
     color: white;
-    background-color: #634F80;
-    border-color: #634F80;
+    background-color: #6e5494;
+    border-color: #6e5494;
     &:hover { background-color: #9482AE; border-color: #9482AE}
   }
 
