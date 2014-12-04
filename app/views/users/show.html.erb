@@ -1,4 +1,10 @@
-<%= image_tag @user.avatar.url(:medium) %>
+
+
+
+
+<% if @user.avatar %>
+  <%= image_tag src='default-avatar.jpg',  height: '32', width: '32' %>
+<% end %>
 <p>Name: <%= @user.name if @user.name %></p>
 <p>Email: <%= @user.email if @user.email %></p>
 <p>Biography: <%= @user.biography %></p>
@@ -17,8 +23,8 @@
           <%= link_to post.description, post %>
         </h2>
         <p class="user"></p>
-        Submitted by
-        <%= post.user.email %>
+        Posted on
+        <%= post.created_at.strftime("%b %d, %Y")%>
       </div>
     </div>
   <% end %>

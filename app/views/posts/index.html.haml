@@ -1,15 +1,24 @@
 #posts.transitions-enabled
 	- @posts.each do |post|
+
 		.box.panel.panel-default
 			= link_to (image_tag post.image.url), post
 			.panel-body
 				%h2= link_to post.description, post
 			.panel-footer
 				.row
-					.col-md-6
-						Submitted by:
-						=post.user.name
-					.col-md-6
+					.col-md-8
+						.submitted
+
+							.user-img
+								=image_tag post.user.avatar.url
+							/ %p.user
+							.user-info
+								Posted by
+								=post.user.name
+								on
+								=post.created_at.strftime("%b %d, %Y")
+					.col-md-4
 						.btn-group.pull-right
 							= link_to like_post_path(post), method: :put, class: "btn btn-default" do
 								%span.octicon.octicon-heart
