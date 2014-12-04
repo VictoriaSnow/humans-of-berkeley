@@ -17,11 +17,9 @@ This application requires:
 
 2. Please make sure you consistently keep your repo up to date by running ```git pull origin master```.  You can try ```bundle install --without production``` if there's a pg gem issue. And then add a database.yml to your config folder. Run ```rake db:migrate``` if there's a pending migration error.
 
-3. To see all the contents, login with email: victoriasnow1124@gmail.com, and password: coco1909.
+3. In order to view the images and upload images, make sure you have ImageMagick installed locally. For more instructions see: https://github.com/thoughtbot/paperclip
 
-4. In order to view the images and upload images, make sure you have ImageMagick installed locally. For more instructions see: https://github.com/thoughtbot/paperclip
-
-5. Some styles and fonts are linked with online resources, so be sure your computer is connected to the internet.
+4. Some styles and fonts are linked with online resources, so be sure your computer is connected to the internet.
 
 Happy coding:-P
 
