@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.4'
+#ruby '2.1.4'
 gem 'rails', '4.1.7'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -13,7 +13,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'haml-rails'
 gem 'simple_form'
-gem 'thin'
+#gem 'thin'
 gem "tzinfo-data"
 gem 'cancancan', '~> 1.9'
 

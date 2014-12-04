@@ -21,6 +21,6 @@
 							= link_to like_post_path(@post), method: :put, class: "btn btn-default" do
 								%span.octicon.octicon-heart
 									=@post.get_upvotes.size
-							- if user_signed_in?
+							- if @post.user_id == current_user.id
 								= link_to "Edit", edit_post_path, class: "btn btn-default"
 								= link_to "Delete", post_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
