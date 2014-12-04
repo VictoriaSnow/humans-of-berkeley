@@ -15,6 +15,7 @@ gem 'haml-rails'
 gem 'simple_form'
 gem 'thin'
 gem "tzinfo-data"
+gem 'cancancan', '~> 1.9'
 
 gem 'paperclip', '~> 4.2.0'
 gem 'masonry-rails', '~> 0.2.4'
