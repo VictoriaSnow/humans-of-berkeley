@@ -70,7 +70,7 @@
   .navbar-default {
     background-color: #FFF;
     border:none;
-
+border-bottom: 3px solid #634F80;
   }
   .navbar-default .navbar-brand {
     font-family: 'Rouge Script', cursive;
@@ -129,11 +129,10 @@
         padding: 25px 10px;
         text-align: left;
         font-family: verdana,helvetica neue;
-
         a {
           color: #474747;
           text-decoration: none;
-
+        white-space: pre-line;
           display: block;
         }
       }
