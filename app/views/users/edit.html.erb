@@ -1,0 +1,9 @@
+<%= form_for(@user) do |f| %>
+
+  <%= f.label :biography %>
+  <%= f.text_field :biography, class: 'form-control' %>
+
+  <%= f.file_field :avatar %>
+
+  <%= f.submit "Save changes", class: "btn btn-primary" %>
+<% end %>

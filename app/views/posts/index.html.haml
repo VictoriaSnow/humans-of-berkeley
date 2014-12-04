@@ -1,12 +1,16 @@
-= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-= javascript_include_tag 'application', 'data-turbolinks-track' => true
-= csrf_meta_tags
 #posts.transitions-enabled
 	- @posts.each do |post|
 		.box.panel.panel-default
 			= link_to (image_tag post.image.url), post
 			.panel-body
 				%h2= link_to post.description, post
-				%p.user
-					Submitted by
-					=post.user.email
+			.panel-footer
+				.row
+					.col-md-6
+						Submitted by:
+						=post.user.name
+					.col-md-6
+						.btn-group.pull-right
+							= link_to like_post_path(post), method: :put, class: "btn btn-default" do
+								%span.octicon.octicon-heart
+									=post.get_upvotes.size
