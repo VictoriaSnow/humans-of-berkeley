@@ -21,8 +21,9 @@
 
   @import "bootstrap-sprockets";
   @import "bootstrap";
-  @import url(http://fonts.googleapis.com/css?family=Roboto);
+  /*  @import url(http://fonts.googleapis.com/css?family=Roboto);*/
   @import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+  @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
   html, body{
     width: 100%;
@@ -30,13 +31,14 @@
     overflow: scroll;
   }
   body {
-    font-family: helvetica neue, verdana, century-gothic, sans-serif;
+    font-family: 'Lato', helvetica neue, verdana, century-gothic, sans-serif;
     background-image: image-url("berkeley_blur.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: top center;
     $body-bg: transparent; 
+    background: #f7f5f2;
   }
 
   nav {
@@ -47,7 +49,7 @@
       font-size: 27px;
     }
 
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.35);
     .navbar-default .navbar-brand {
 
       a {
@@ -62,26 +64,26 @@
 
     }
     background: #FFFFFF;
-    -moz-box-shadow:    0px 3px 4px 0px rgba(0,0,0,0.35);
-    box-shadow:         0px 3px 4px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow:    0px 1px 2px 0px rgba(0,0,0,0.35);
+    box-shadow:         0px 1px 2px 0px rgba(0,0,0,0.35);
     color: #6e5494;
     line-height: 28px;
   }
   .navbar-default {
     background-color: #FFF;
     border:none;
-border-bottom: 3px solid #6e5494;
+    border-bottom: 3px solid #6e5494;
   }
   .navbar-default .navbar-brand {
-    font-family: 'Rouge Script', cursive;
+    font-family: 'Rouge Script', helvetica neue, cursive;
     font-size: 28px;
     color: #6e5494;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    /*    text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
   }
 
   .navbar-nav > li > a {
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: "lato", helvetica neue, verdana, 'Roboto', sans-serif;
   }
 
 
@@ -89,254 +91,279 @@ border-bottom: 3px solid #6e5494;
     margin: 0px auto;
     width: 100%;
     .box {
-      margin: 10px;
-      width: 350px;
 
-      box-shadow: 0 -2px 6px transparent,0 3px 8px rgba(0, 0, 0, 0.5) ,0 10px 10px transparent,0 14px 14px transparent,0 19px 19px transparent;
-      border-radius: 5px;
-      border: none;
+      background: white;
+      box-shadow: 0 0 5px #edeae5;
+      /*margin-bottom: 18px;*/
+      transition: linear .2s;
+/*cursor: pointer;
+overflow: hidden;
+padding: 0;*/
 
 
-      background: rgba(255,255,255,0.8);
-      -moz-border-radius:5px;
-      -webkit-border-radius:5px;
-      text-align: center;
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-        -moz-border-radius:5px 5px 0 0;
-        -webkit-border-radius:5px 5px 0 0;
-      }
-      .user-img{
-        float: left;
-        height: 30px;
-        margin-right: 10px;
-        margin-top: 2px;
-        width: 30px;
-        img {
+margin: 10px;
+width: 350px;
 
-          border-radius: 50%;
-          -moz-border-radius:50%;
-          -webkit-border-radius:50%;
-        }
-      }
-      h2 {
+/*      box-shadow: 0 -2px 6px transparent,0 3px 8px rgba(0, 0, 0, 0.5) ,0 10px 10px transparent,0 14px 14px transparent,0 19px 19px transparent;*/
+/*      border: none;*/
 
-        font-size: 12px;
-        line-height: 1.6;
-        margin: 0;
-        padding: 25px 10px;
-        text-align: left;
-        font-family: verdana,helvetica neue;
-        a {
-          color: #474747;
-          text-decoration: none;
-        white-space: pre-line;
-          display: block;
-        }
-      }
-      .user {
-        font-size: 12px;
-        border-top: 1px solid #EAEAEA;
-        padding: 10px;
-        margin: 0;
-      }
-      .user-info{
-        font-size: 12px;
-        text-align: left;
-        color: #717171;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: block;
-      }
-      .panel-footer{
-        background: rgba(230, 230, 230, 0.5);
-      }
+
+background: rgba(255,255,255,0.8);
+border-radius: 5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align: center;
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -moz-border-radius:5px 5px 0 0;
+  -webkit-border-radius:5px 5px 0 0;
+}
+.user-img{
+  float: left;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 2px;
+  width: 30px;
+  img {
+
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+  }
+}
+h2 {
+
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 25px 10px;
+  text-align: left;
+  /*        font-family: verdana,helvetica neue;*/
+  a {
+    color: #474747;
+    text-decoration: none;
+    white-space: pre-line;
+    display: block;
+  }
+}
+.user {
+  font-size: 12px;
+  border-top: 1px solid #EAEAEA;
+  padding: 10px;
+  margin: 0;
+}
+.user-info{
+  font-size: 12px;
+  text-align: left;
+  color: #717171;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  font-weight: bold;
+}
+.panel-footer{
+  background: white;
+  /*        background: rgba(230, 230, 230, 0.5);*/
+
+}
+}
+}
+
+#edit_page {
+  .current_image {
+    img {
+      display: block;
+      margin: 20px 0;
+
     }
   }
+}
 
-  #edit_page {
-    .current_image {
-      img {
-        display: block;
-        margin: 20px 0;
-
-      }
+#post_show {
+  .panel-heading {
+    padding: 0;
+  }
+  .post_image {
+    img {
+      max-width: 100%;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+      -moz-border-radius:4px 4px 0 0;
+      -webkit-border-radius:4px 4px 0 0;
     }
   }
+  .panel{
+    border:none;
 
-  #post_show {
-    .panel-heading {
-      padding: 0;
-    }
-    .post_image {
-      img {
-        max-width: 100%;
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-        border-radius: 4px;
-        -moz-border-radius:4px 4px 0 0;
-        -webkit-border-radius:4px 4px 0 0;
-      }
-    }
-    .panel{
-      border:none;
-
-    }
-    .panel-body {
-      padding: 35px;
-      h1 {
-        margin: 0 0 10px 0;
-      }
-      .description {
-        color: #868686;
-        line-height: 1.75;
-        margin: 0;
-      }
-    }
-    .panel-footer {
-      padding: 20px 35px;
-      background: rgba(230, 230, 230, 0.5);
-
-      p {
-        margin: 0;
-      }
-      .user {
-        padding-top: 8px;
-      }
-    }
   }
-
-  textarea {
-    min-height: 150px;
-  }
-  .btn-primary{
-    color: white;
-    background-color: #6e5494;
-    border-color: #6e5494;
-    &:hover { background-color: #9482AE; border-color: #9482AE}
-  }
-  .panel-default{
-    background: rgba(255, 255, 255, 0.8);
-  }
-  .panel-default .panel-heading{
-    background: rgba(230, 230, 230, 0.5);
-    text-align: center;
-    color: #6e5494;
-  }
-
-  #user_show{
-    .profile-img{
-      img {
-
-        border-radius: 5%;
-        -moz-border-radius:5%;
-        -webkit-border-radius:5%;
-        padding: 5px;
-        background-color: whitesmoke;
-        width: 160px;
-        height: 160px;
-      }
+  .panel-body {
+    padding: 35px;
+    h1 {
+      margin: 0 0 10px 0;
     }
-    .user-info{
-      margin-top: 3px;
+    p{
+      color:#4a4a4a;
+      line-height: 32px;
       font-size: 16px;
+    }
+    .description {
+      color: #868686;
+      line-height: 1.75;
+      margin: 0;
+    }
+  }
+  .panel-footer {
+    padding: 20px 35px;
+    background: white;
+    /*      background: rgba(230, 230, 230, 0.5);*/
+    font-weight: bold;
+
+    p {
+      margin: 0;
+
+
+    }
+    .user {
+      padding-top: 8px;
 
     }
   }
-  #edit_user {
-    .current_avatar {
-      img {
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 5%;
-        -moz-border-radius:5%;
-        -webkit-border-radius:5%;
-        padding: 5px;
-        background-color: whitesmoke;
-        width: 160px;
-        height: 160px;
-      }
+}
+
+textarea {
+  min-height: 150px;
+}
+.btn-primary{
+  color: white;
+  background-color: #6e5494;
+  border-color: #6e5494;
+  &:hover { background-color: #9482AE; border-color: #9482AE}
+}
+.panel-default{
+  background: rgba(255, 255, 255, 0.8);
+}
+.panel-default .panel-heading{
+  background: rgba(230, 230, 230, 0.5);
+  text-align: center;
+  color: #6e5494;
+}
+
+#user_show{
+  .profile-img{
+    img {
+
+      border-radius: 5%;
+      -moz-border-radius:5%;
+      -webkit-border-radius:5%;
+      padding: 5px;
+      background-color: whitesmoke;
+      width: 160px;
+      height: 160px;
     }
   }
-
-
-  // Styles for form views
-  // using Bootstrap
-  // generated by the rails_layout gem
-  .authform {
-    padding-top: 30px;
-    max-width: 320px;
-    margin: 0 auto;
-    max-width: 360px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    font-family: helvetica neue, verdana, sans-serif;
-    border-radius: 5px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    margin-bottom: 10px;
-
-  }
-  .authform form {
-    @extend .well;
-    @extend .well-lg;
-    padding-bottom: 50px;
-    margin-bottom: 0px;
-    background: rgba(230, 230, 230, 0.5);
-
-  }
-  .authform .right {
-    float: right !important;
-  }
-  .authform .button {
-    @extend .btn;
-    @extend .btn-primary;
-    color: white;
-    background-color: #6e5494;
-    border-color: #6e5494;
-    &:hover { background-color: #9482AE; border-color: #9482AE}
-  }
-
-  .authform fieldset {
-    @extend .well;
-  }
-  #error_explanation {
-    @extend .alert;
-    @extend .alert-danger;
-  }
-  #error_explanation h2 {
+  .user-info{
+    margin-top: 3px;
     font-size: 16px;
-  }
-  .button-xs {
-    @extend .btn;
-    @extend .btn-primary;
-    @extend .btn-xs;
-  }
 
-  // THESE ARE EXAMPLES YOU CAN MODIFY
-  // create your own classes
-  // to make views framework-neutral
-  .column {
-    @extend .col-md-6;
-    @extend .text-center;
   }
-  .form {
-    @extend .col-md-6;
+}
+#edit_user {
+  .current_avatar {
+    img {
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 5%;
+      -moz-border-radius:5%;
+      -webkit-border-radius:5%;
+      padding: 5px;
+      background-color: whitesmoke;
+      width: 160px;
+      height: 160px;
+    }
   }
-  .form-centered {
-    @extend .col-md-6;
-    @extend .text-center;
-  }
-  .submit {
-    @extend .btn;
-    @extend .btn-primary;
-    @extend .btn-lg;
-  }
+}
+
+
+// Styles for form views
+// using Bootstrap
+// generated by the rails_layout gem
+.authform {
+  padding-top: 30px;
+  max-width: 320px;
+  margin: 0 auto;
+  max-width: 360px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  /*    font-family: helvetica neue, verdana, sans-serif;*/
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  margin-bottom: 10px;
+
+}
+.authform form {
+  @extend .well;
+  @extend .well-lg;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+  background: rgba(230, 230, 230, 0.5);
+
+}
+.authform .right {
+  float: right !important;
+}
+.authform .button {
+  @extend .btn;
+  @extend .btn-primary;
+  color: white;
+  background-color: #6e5494;
+  border-color: #6e5494;
+  &:hover { background-color: #9482AE; border-color: #9482AE}
+}
+
+.authform fieldset {
+  @extend .well;
+}
+#error_explanation {
+  @extend .alert;
+  @extend .alert-danger;
+}
+#error_explanation h2 {
+  font-size: 16px;
+}
+.button-xs {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-xs;
+}
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create your own classes
+// to make views framework-neutral
+.column {
+  @extend .col-md-6;
+  @extend .text-center;
+}
+.form {
+  @extend .col-md-6;
+}
+.form-centered {
+  @extend .col-md-6;
+  @extend .text-center;
+}
+.submit {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+}
 
 /*.well, .authform form, .authform fieldset {
 min-height: 20px;
