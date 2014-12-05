@@ -23,6 +23,7 @@ Sean: made User, related controllers, views,  debug
 
 
 How to contribute:
+------------------
 
 Please read this before you fork or clone this repo!
 
