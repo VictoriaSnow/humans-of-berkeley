@@ -1,33 +1,5 @@
 Humans of Berkeley
 ================
-Please read this before you fork or clone this repo!
-
-
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.1.4
-- Rails 4.1.7
-
-
-1. To clone this repo (run ```git clone git@github.com:VictoriaSnow/humans-of-berkeley.git```) in your terminal. Cd into the directory, run ```bundle install --without production``` and migrate your database, then start your server. (If you have trouble running the bundle install, try running ```rvm use 2.1.4``` in your terminal first).
-
-2. Please make sure you consistently keep your repo up to date by running ```git pull origin master```.  You can try ```bundle install --without production``` if there's a pg gem issue. And then add a database.yml to your config folder. Run ```rake db:migrate``` if there's a pending migration error.
-
-3. In order to view the images and upload images, make sure you have ImageMagick installed locally. For more instructions see: https://github.com/thoughtbot/paperclip
-
-4. Some styles and fonts are linked with online resources, so be sure your computer is connected to the internet.
-
-Happy coding:-P
-
-
-
-
-
-© 2014 Victoria Bian. All rights reserved.
-
 
 Rails DeCal:
 Project Writeup
@@ -48,3 +20,28 @@ Users can sign up and login, post on the front page, add description and image t
 Division of Labor:
 Victoria: made Post, related controllers, views, all stylings
 Sean: made User, related controllers, views,  debug
+
+
+How to contribute:
+
+Please read this before you fork or clone this repo!
+
+
+This application requires:
+
+- Ruby 2.1.4
+- Rails 4.1.7
+
+
+1. To clone this repo (run ```git clone git@github.com:VictoriaSnow/humans-of-berkeley.git```) in your terminal. Cd into the directory, run ```bundle install --without production``` and migrate your database, then start your server. (If you have trouble running the bundle install, try running ```rvm use 2.1.4``` in your terminal first).
+
+2. Please make sure you consistently keep your repo up to date by running ```git pull origin master```.  You can try ```bundle install --without production``` if there's a pg gem issue. And then add a database.yml to your config folder. Run ```rake db:migrate``` if there's a pending migration error.
+
+3. In order to view the images and upload images, make sure you have ImageMagick installed locally. For more instructions see: https://github.com/thoughtbot/paperclip
+
+4. Some styles and fonts are linked with online resources, so be sure your computer is connected to the internet.
+
+
+Happy coding:-P
+
+© 2014 Victoria Bian. All rights reserved.
