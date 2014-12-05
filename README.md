@@ -42,7 +42,7 @@ This application requires:
 
 4. Some styles and fonts are linked with online resources, so be sure your computer is connected to the internet.
 
-
+Email me with any issue you have: v@victoriabian.com
 Happy coding:-P
 
-© 2014 Victoria Bian. All rights reserved.
+© 2014 Victoria Bian, Lifespice Designs. All rights reserved.
